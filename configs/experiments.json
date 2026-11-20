@@ -1,0 +1,14 @@
+{
+  "shared": {"d": 64, "h": 64, "batch_size": 32, "optimizer": "Adam", "lr": 0.001, "grad_clip": 5.0,
+             "tau": 0.1, "max_epochs": 20, "early_stopping_patience": 4, "selection_metric": "validation macro-F1",
+             "seeds": [13, 42, 2026]},
+  "models": {
+    "dense": {"description": "Existing method: dense complex embedding + dual LSTM + density-mixture overlap head"},
+    "fact":  {"description": "Proposed method: word2ketXS-factorized complex embedding (n=2, grid 118x118, d=8x8)", "rank": 4},
+    "real":  {"description": "Control: real-valued embedding + one LSTM + mean pooling + linear softmax"}
+  },
+  "ablations_seed_42": [
+    {"model": "fact", "rank": 2}, {"model": "fact", "rank": 8}, {"model": "fact_noimag", "rank": 4}
+  ],
+  "commands": "see run_all.sh / run_all.bat; every run is: python src/qwe.py --model <m> [--rank r] --seed <s>"
+}

@@ -1,0 +1,8 @@
+metric,dense,fact,real,improvement_fact_minus_dense
+Accuracy (%),76.99,72.43,77.76,-4.56
+Precision (%),77.06,73.14,77.81,-3.92
+Recall (%),76.99,72.45,77.76,-4.54
+F1-score (%),76.98,72.23,77.75,-4.75
+Specificity (%),77.49,64.07,77.19,-13.41
+Error rate (%),23.01,27.57,22.24,+4.56
+False positive rate (%),22.51,35.93,22.81,+13.41

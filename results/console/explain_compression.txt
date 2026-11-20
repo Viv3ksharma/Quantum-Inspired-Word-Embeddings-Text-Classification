@@ -1,0 +1,14 @@
+Vocabulary size V = 13,840 words, embedding size d = 64
+Grid: 118 rows x 118 columns = 13,924 slots  (>= 13,840),   d = 8 x 8 = 64
+
+Word "good" has ID 5341  ->  row i = 5341 // 118 = 45,  column j = 5341 % 118 = 31
+
+For k = 1..4: take F1[k][45] (8 numbers) and F2[k][31] (8 numbers),
+Kronecker product -> 8 x 8 = 64 numbers, then add the 4 results:
+  first 8 numbers of the rebuilt embedding: [ 0.104  0.272  0.109 -0.179 -0.004 -0.133  0.122  0.034]
+  length of rebuilt embedding: 64
+
+Storage (real + imaginary channels):
+  Dense complex      : 2 x 13,840 x 64            =  1,771,520 numbers
+  Factorized (r=4)   : 2 x 4 x (118x8 + 118x8)  =     15,104 numbers
+  Reduction          : 117x smaller (99.15% less)

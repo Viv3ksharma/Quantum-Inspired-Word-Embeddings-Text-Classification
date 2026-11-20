@@ -1,0 +1,15 @@
+Loaded model: Factorized complex (proposed)  (81,410 parameters)
+"the movie was not good at all"
+  NEGATIVE  (negative  89.3% | positive  10.7%)
+Loaded model: Factorized complex (proposed)  (81,410 parameters)
+"an absolute masterpiece , funny and moving"
+  POSITIVE  (negative   5.4% | positive  94.6%)
+Loaded model: Factorized complex (proposed)  (81,410 parameters)
+"boring and far too long"
+  NEGATIVE  (negative  99.4% | positive   0.6%)
+Loaded model: Factorized complex (proposed)  (81,410 parameters)
+"a wonderful , moving and beautifully acted film"
+  POSITIVE  (negative   0.2% | positive  99.8%)
+Loaded model: Factorized complex (proposed)  (81,410 parameters)
+"dull and lifeless"
+  NEGATIVE  (negative  92.2% | positive   7.8%)

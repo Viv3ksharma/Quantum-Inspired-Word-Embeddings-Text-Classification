@@ -1,0 +1,6 @@
+Loaded model: Dense complex (existing)  (1,837,826 parameters)
+"the movie was not good at all"
+  NEGATIVE  (negative  90.9% | positive   9.1%)
+Loaded model: Dense complex (existing)  (1,837,826 parameters)
+"boring and far too long"
+  NEGATIVE  (negative  96.4% | positive   3.6%)
